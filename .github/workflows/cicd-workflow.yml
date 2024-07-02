@@ -21,6 +21,8 @@ jobs:
       - name: Push image to Docker Hub
         run: docker push oddgroots/nodejs-app:latest
 
+        
+
   deploy:
     needs: build
     runs-on: aws-ec2
