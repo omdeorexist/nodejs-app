@@ -13,7 +13,7 @@ jobs:
       - name: Login to docker hub
         run: docker login -u oddgroots -p Odd@91754
       - name: Build docker image
-        run: docker build -t integrationninjas/nodejs-app .
+        run: docker build -t oddgroots/nodejs-app .
       - name: Publish image to docker hub
         run: docker push oddgroots/odd:nodejs-app:latest
         
